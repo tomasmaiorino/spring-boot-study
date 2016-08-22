@@ -2,20 +2,20 @@ It's a RESTful service responsible for two simple e-commerce scenarios.
 
 In this application, there is an embedded application server and a database.
 
-This application is running under Spring Boot. 
+This application is running under Spring Boot.
 
 
 ## Used Technologies
 
 **1. Java version 7.**
 
-**3. JPA / Hibernate:** Mapping persistent entities in domains objects.
+**2. JPA / Hibernate:** Mapping persistent entities in domains objects.
 
-**6. Logback:** Generation of logs.
+**3. Logback:** Generation of logs.
 
-**7. Spring Data JPA:** It's used to generate part of the code of the persistence layer.
+**4. Spring Data JPA:** It's used to generate part of the code of the persistence layer.
 
-**9. Jackson:** API for convert the Java data in Json and vice versa.
+**5. Jackson:** API for convert the Java data in Json and vice versa.
 
 ## Additional Technologies
 
@@ -71,4 +71,3 @@ curl -i -H "Content-Type:application/json" -H "Accept:application/json" -X POST 
 
 ##### To update the order, type it:
 curl -i -H "Content-Type:application/json" -H "Accept:application/json" -X PUT -d "{\"id\":4, \"commerceItems\": [{\"sku\": {\"id\": 1},\"quantity\": 12,\"unitValue\": 12}],\"status\": \"APPROVED\",\"paymentStatus\": \"CREATED\",\"totalAmount\": 21}" http://localhost:8080/order
-
